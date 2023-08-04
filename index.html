@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet ðŸ‘ -->
+<body>
+  <div class = "main-container">
+
+ 
+    <div class="top"> 
+       <div class="first">
+         <p class="first-para"> DAY </p>
+         <input type="number" class="input day" id="day" placeholder="DD">
+         
+       </div>
+       <div class="second">
+         <p class="second-para"> MONTH </p>
+         <input type="number" class="input month" id="month" placeholder="MM">
+         
+       </div>
+       <div class="third"> 
+         <p class="third-para"> YEAR </p>
+         <input type="number" class="input year" id="year" placeholder="YYYY">
+         
+       </div>
+    </div>
+    
+    <div class="error-paras">
+        <p class="day-error"></p>
+        <p class="month-error"></p>
+        <p class="year-error"></p>
+        
+    </div>
+    
+    <div class="middle">
+      <hr height="15px"/>
+      <button onclick="myFunc()" id="btn">
+        <img src="./assets/images/icon-arrow.svg" alt="arrow-img">
+      </button>
+    </div>
+    
+    <div class="bottom"> 
+      <p> <span id="year-output" class="output year-output"> - - </span> years </p>
+      <p> <span id="month-output" class="output month-output"> - - </span> months </p>
+      <p id="day-out"> <span id="day-output" class ="output day-output"> - - </span> days </p>
+    </div>
+    
+    
+    </div>
+  <script src="myjs.js"></script>
+</body>
+</html>
